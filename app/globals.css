@@ -18,10 +18,18 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+footer {
+  flex: 0 0 auto;
+  padding: 1rem;
 }
