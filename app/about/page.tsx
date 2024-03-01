@@ -8,14 +8,15 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import Image from 'next/image'
+import Contact from '../components/contact/page'
 
 export default function page() {
 
   const team =[
-    {name :"John Doe", image: "/person1.jpg", alt: "john doe",  position: "Founder and CTO"},
-    {name :"John Doe", image: "/person1.jpg", alt: "john doe",  position: "Founder and CTO"},
-    {name :"John Doe", image: "/person1.jpg", alt: "john doe",  position: "Founder and CTO"},
-    {name :"John Doe", image: "/person1.jpg", alt: "john doe",  position: "Founder and CTO"},
+    {name :"Ismail L Ngaula", image: "/person1.jpg", alt: "Ismail Ngaula",  position: "Director"},
+    {name :"Athanus Machiya Ngesse", image: "/person1.jpg", alt: "Athanus Ngesse",  position: "Director"},
+    {name :"Khamis Ramadhani Suluhu", image: "/person1.jpg", alt: "Khamis Suluhu",  position: "Director"},
+    {name :"Farizal Jumanne Kibela", image: "/person1.jpg", alt: "Farizal Jumanne Kibela",  position: "Director"},
   ]
   return (
     <main>
@@ -62,10 +63,10 @@ export default function page() {
           ))}
         </div>
       </div>
-      <div className='shadow-md m-4 text-center' id="team">
+      <div className='shadow-md m-4 text-center' id="contacts">
         <span className='text-2xl text-center p-4'>Our Offices</span>
         <div className="md:flex p-4 ">
-          
+          <Contact/>
         </div>
       </div>
     </main>
