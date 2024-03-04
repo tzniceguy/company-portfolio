@@ -20,7 +20,6 @@ export default function Service ({title, description, image }: Props) {
         <Card>
         <CardHeader>
             <CardTitle>{title}</CardTitle>
-            <CardDescription>{image}</CardDescription>
         </CardHeader>
         <CardContent>
             <div className='relative h-40 w-full'>
