@@ -12,7 +12,7 @@ type Props= {
 
 export default function Testimonial({avatar, name, title, content, url}:Props) {
   return (
-    <div className='p-4 m-4 rounded shadow-xl'>
+    <div className='p-4 m-4 rounded shadow-lg hover:shadow-2xl'>
         <Card className="max-w-[400px]">
         <CardHeader className="flex gap-3">
             <Image
