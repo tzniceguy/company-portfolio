@@ -30,7 +30,7 @@ export default function Testimonials() {
 
 
   return (
-    <div>
+    <div id='testimonials'>
         {testimonials.map((testimonial, index) => (
             <Testimonial
                 key={index}
