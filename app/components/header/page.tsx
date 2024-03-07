@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <section>
-      <div className='bg-gradient-to-tl from-black via-transparent to-transparent h-96 w-full relative'>
+      <div className='bg-gradient-to-tl from-black via-transparent to-transparent h-96 w-full relative overflow-auto'>
         <Image src={background}alt='background-image' layout='fill' className='object-cover absolute w-full h-full mix-blend-overlay'/>
         <div className='p-16 md:p-24 w-full h-full relative z-10'>
           <h1 className='text-black text-3xl font-bold uppercase'>Future Allied Company</h1>
