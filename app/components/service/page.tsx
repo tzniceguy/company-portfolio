@@ -16,18 +16,20 @@ type Props={
 
 export default function Service ({title, description, image }: Props) {
   return (
-    <main>
-        <Card>
-        <CardHeader>
-            <CardTitle>{title}</CardTitle>
-        </CardHeader>
-        <CardContent>
-            <div className='relative h-40 w-full'>
-                <Image src={image} alt={title} layout='fill' objectFit='cover' className='rounded-lg'/>
-             </div>
-            <p>{description}</p>
-        </CardContent>
-        </Card>
-    </main>
+    <div className='p-4 max-w-sm'>
+      <div className='flex rounded-lg h-full'>
+          <Card>
+          <CardHeader>
+              <CardTitle>{title}</CardTitle>
+          </CardHeader>
+          <CardContent>
+              <div className='relative h-40 w-full'>
+                  <Image src={image} alt={title} layout='fill' objectFit='fill' className='rounded-lg'/>
+              </div>
+              <p>{description}</p>
+          </CardContent>
+          </Card>
+      </div>
+    </div>
   )
 }
