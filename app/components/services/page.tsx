@@ -16,7 +16,7 @@ export default function Services() {
     ];
 
     return (
-        <div className='md:flex flex-wrap justify-between w-full md:1/3 p-4'>
+        <div className='flex-wrap justify-center mt-10 p-4 md:grid grid-cols-3' id='services'>
             {services.map((service, index) => (
                 <Service
                     key={index}
