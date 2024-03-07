@@ -56,7 +56,8 @@ export default function page() {
               <CardDescription>{member.position}</CardDescription>
             </CardHeader>
             <CardContent>
-              <Image src={member.image} alt={member.alt} width={150} height={150}>                
+              <Image src={member.image} alt={member.alt} sizes='' layout='responsive' width ={1000} height={1000}
+              className='cover shadow-md'>                
               </Image>
             </CardContent>
             </Card>
