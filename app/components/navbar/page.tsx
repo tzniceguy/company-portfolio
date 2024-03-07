@@ -15,8 +15,8 @@ export default function NavBar() {
 
   const links = [
     { label: 'Home', href: '/' },
-    { label: 'Services', href: '#services' },
-    { label: 'Testimonials', href: '#testimonials' },
+    { label: 'Services', href: '/#services' },
+    { label: 'Testimonials', href: '/#testimonials' },
     { label: 'About', href: '/about' },
     { label: 'Contact', href: '/about#contact' },
   ];
