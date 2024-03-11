@@ -9,26 +9,26 @@ import {
   } from "@/components/ui/card"
   
 type Props={
-    title : string;
-    description: string;
-    image: string;
+    params:{ title : string, description: string, image: string;};
+    
 }
 
-export default function Service ({title, description, image }: Props) {
+export default function Service ({params }: Props) {
   return (
     <div className='p-4 max-w-sm'>
-      <div className='flex rounded-lg h-full'>
+      <div className='flex rounded-lg h-full'>{params &&(
           <Card>
           <CardHeader>
-              <CardTitle>{title}</CardTitle>
+              <CardTitle>{params.title}</CardTitle>
           </CardHeader>
           <CardContent>
               <div className='relative h-40 w-full'>
-                  <Image src={image} alt={title} layout='fill' objectFit='fill' className='rounded-lg'/>
+                  <Image src={params.image} alt={params.title} layout='fill' objectFit='fill' className='rounded-lg'/>
               </div>
-              <p>{description}</p>
+              <p>{params.description}</p>
           </CardContent>
           </Card>
+          )}
       </div>
     </div>
   )
